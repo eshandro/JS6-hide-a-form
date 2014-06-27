@@ -25,6 +25,25 @@ $(document).on('ready', function() {
 
   	$('.form-user-name').on('blur', function() {
   		$('.user-name').html($(this).val());
-  		
+  		$('.page-title').html($(this).val() + '\'s Profile Page');
   	});
+
+  	$('.form-user-bio textarea').on('blur', function() {
+  		$('.bio').html($(this).val());
+  	});
+
+  	$('.form-books1').on('blur', function() {
+  		$('.books ul').append('<li>' + $(this).val() + '</li>');
+  	})
+  	$('.form-books2').on('blur', function() {
+  		$('.books ul').append('<li>' + $(this).val() + '</li>');
+  	})
+  	$('.form-js-libraries1').on('blur', function() {
+  		$('.js-libraries ul').append('<li>' + $(this).val() + '</li>');
+  	});
+  	$('.form-js-libraries2').on('blur', function() {
+  		$('.js-libraries ul').append('<li>' + $(this).val() + '</li>');
+  	});
+
+
 });
