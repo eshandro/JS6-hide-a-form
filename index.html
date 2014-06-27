@@ -8,50 +8,44 @@
 <body>
 <div class="wrapper">	
 	<header>
-		<h2>Your Profile Page</h2>
+		<h2 class="page-title">Your Profile Page</h2>
 	</header>	
 	<div class="container">
 	
-		<button class="button">Enter profile info</button>
+		<button class="button show-hide-form">Enter profile info</button>
 
-		<form class="enter-profile">
+		<form class="enter-profile is-hidden">
 			<ul>
-				<li class="form-user-name">
+				<li>
 					<label for="user-name">Enter your User Name</label>
-					<input type="text" name="user-name">
+					<input class="form-user-name" type="text" name="user-name">
 				</li>
 				<li class="form-user-bio">
 					<label for="user-bio">Tell us about yourself</label>
-					<textarea rows="5" name="user-bio"></textarea>
-				</li>
-				<li class="form-books">
-					<h4>Enter your top 3 books</h4>
-					<label for="favorite-book1">Book 1:</label>
-					<input type="text" name="favorite-book1">
-				</li>
-				<li class="form-books">
-					<label for="favorite-book2">Book 2:</label>
-					<input type="text" name="favorite-book2">
-				</li>
-				<li class="form-books">
-					<label for="favorite-book3">Book 3:</label>
-					<input type="text" name="favorite-book3">
-				</li>
-				<li class="form-js-libraries">
-					<h4>Enter your top 3 Javascript libraries</h4>
-					<label for="favorite-js1">JS library 1:</label>
-					<input type="text" name="favorite-js1">
-				</li>
-				<li class="form-js-libraries">
-					<label for="favorite-js2">JS library 2:</label>
-					<input type="text" name="favorite-js2">
-				</li>
-				<li class="form-js-libraries">	
-					<label for="favorite-js3">JS library 3:</label>
-					<input type="text" name="favorite-js3">
+					<textarea class="form-user-bio" rows="5" name="user-bio"></textarea>
 				</li>
 				<li>
-					<input class="button" type="submit" value="Update your profile">
+					<h4>Enter your top 2 books</h4>
+					<label for="favorite-book1">Book 1:</label>
+					<input class="form-books1" type="text" name="favorite-book1">
+				</li>
+				<li>
+					<label for="favorite-book2">Book 2:</label>
+					<input class="form-books2" type="text" name="favorite-book2">
+				</li>
+
+				<li>
+					<h4>Enter your top 2 Javascript libraries</h4>
+					<label for="favorite-js1">JS library 1:</label>
+					<input class="form-js-libraries1" type="text" name="favorite-js1">
+				</li>
+				<li>
+					<label for="favorite-js2">JS library 2:</label>
+					<input class="form-js-libraries2" type="text" name="favorite-js2">
+				</li>
+
+				<li>
+					<input class="button submit-button is-hidden" type="submit" value="Update your profile">
 				</li>
 			</ul>
 		</form>
@@ -63,7 +57,7 @@
 			
 			<div class="clear">
 				<div class="books list-box">
-					<h5 class="list-title">Top Books</h5>
+					<h4 class="list-title">Top Books</h4>
 
 					<ul>
 
@@ -71,7 +65,7 @@
 				</div>
 
 				<div class="js-libraries list-box">
-					<h5 class="list-title">Top JS Libraries</h5>
+					<h4 class="list-title">Top JS Libraries</h4>
 					<ul>
 
 					</ul>

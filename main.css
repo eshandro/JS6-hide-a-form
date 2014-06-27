@@ -16,6 +16,10 @@ header h2 {
 	font-family: 
 }
 
+.is-hidden {
+	display: none;
+}
+
 .clear {
 	clear: both;
 }
@@ -83,8 +87,19 @@ header h2 {
 }
 
 .list-box {
-	float: left;
+	display: inline-block;
 	padding: 10px 50px 0 0;
+}
+
+.list-title {
+	margin: 10px 0 2px 0;
+}
+
+.list-box ul { 
+	list-style: none;
+	padding: 0;
+	margin-top: 0;
+
 }
 
 .user-name {
