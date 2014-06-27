@@ -6,7 +6,79 @@
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
+<div class="wrapper">	
+	<header>
+		<h2>Your Profile Page</h2>
+	</header>	
+	<div class="container">
 	
+		<button class="button">Enter profile info</button>
+
+		<form class="enter-profile">
+			<ul>
+				<li class="form-user-name">
+					<label for="user-name">Enter your User Name</label>
+					<input type="text" name="user-name">
+				</li>
+				<li class="form-user-bio">
+					<label for="user-bio">Tell us about yourself</label>
+					<textarea rows="5" name="user-bio"></textarea>
+				</li>
+				<li class="form-books">
+					<h4>Enter your top 3 books</h4>
+					<label for="favorite-book1">Book 1:</label>
+					<input type="text" name="favorite-book1">
+				</li>
+				<li class="form-books">
+					<label for="favorite-book2">Book 2:</label>
+					<input type="text" name="favorite-book2">
+				</li>
+				<li class="form-books">
+					<label for="favorite-book3">Book 3:</label>
+					<input type="text" name="favorite-book3">
+				</li>
+				<li class="form-js-libraries">
+					<h4>Enter your top 3 Javascript libraries</h4>
+					<label for="favorite-js1">JS library 1:</label>
+					<input type="text" name="favorite-js1">
+				</li>
+				<li class="form-js-libraries">
+					<label for="favorite-js2">JS library 2:</label>
+					<input type="text" name="favorite-js2">
+				</li>
+				<li class="form-js-libraries">	
+					<label for="favorite-js3">JS library 3:</label>
+					<input type="text" name="favorite-js3">
+				</li>
+				<li>
+					<input class="button" type="submit" value="Update your profile">
+				</li>
+			</ul>
+		</form>
+
+		<div class="profile-display-box">
+			<img src="http://placekitten.com/150/150" class="profile-pic">
+			<h3 class="user-name">User name</h3>
+			<p class="bio">Your bio info</p>
+			
+			<div class="clear">
+				<div class="books list-box">
+					<h5 class="list-title">Top Books</h5>
+
+					<ul>
+
+					</ul>
+				</div>
+
+				<div class="js-libraries list-box">
+					<h5 class="list-title">Top JS Libraries</h5>
+					<ul>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <script src="main.js"></script>
 

@@ -1,0 +1,103 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #c63d0f;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+	background-color: #c63d0f;
+}
+
+header h2 {
+	text-align: center;
+	font-family: 
+}
+
+.clear {
+	clear: both;
+}
+
+.container {
+	margin: 5% auto;
+	width: 660px;
+	background-color: #fdf3e7;
+	padding: 20px;
+}
+
+/* Enter profile info area and form*/
+.enter-profile ul {
+	list-style: none;
+}
+
+.enter-profile li {
+	margin: 15px 0;
+}
+
+.enter-profile input {
+	width: 20em;
+	height: 2.5em;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+.enter-profile label {
+	line-height: 2.5em;
+	padding-right: 10px;
+}
+
+.enter-profile textarea {
+	width: 30em;
+	border-radius: 5px;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+.form-user-bio > * {
+
+	vertical-align: middle;
+}
+.button {
+	background-color: rgba(126,143,124,1);
+	color: #fdf3e7;
+	height: 40px;
+	width: 180px;
+	border-radius: 10px;
+	border: none;
+	font-size: 14px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+/* Profile display area */
+.profile-display-box {
+	border-top: 3px solid rgba(126,143,124,.7);
+	padding: 20px 0;
+	margin-top: 50px;
+}
+
+.profile-pic {
+	float: right;
+	padding-left: 50px;
+}
+
+.list-box {
+	float: left;
+	padding: 10px 50px 0 0;
+}
+
+.user-name {
+	color:rgba(126,143,124,1);
+	margin-bottom: 3px;
+}
+
+.bio {
+	width: 300px;
+	height: 100px;
+	border: 1px solid rgba(126,143,124,.6);
+	border-radius: 10px;
+	padding: 5px;
+	margin-top: 3px;
+	font-size: 12px;
+}
