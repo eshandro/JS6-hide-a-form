@@ -11,15 +11,20 @@ $(document).on('ready', function() {
 
 	    $('.js-libraries ul').append('<li>' + $('.form-js-libraries1').val() + '</li>');
 	   	$('.js-libraries ul').append('<li>' + $('.form-js-libraries2').val() + '</li>'); 	
+
   });
   	
   	$('.show-hide-form').on('click', function() {
-  		$('.enter-profile').toggleClass('is-hidden');
+  		// $('.enter-profile').toggleClass('is-hidden');
   		if($(this).html() === 'Enter profile info') {
-  			$(this).html('Hide the Form');
+  			$('.enter-profile').show(1000);
+
+        $(this).html('Hide the Form');
   		}
   		else {
-  			$(this).html('Enter profile info');
+  			$('.enter-profile').hide(1000);
+        $(this).html('Enter profile info');
+
   		}
   	});
 
@@ -34,13 +39,15 @@ $(document).on('ready', function() {
 
   	$('.form-books1').on('blur', function() {
   		$('.books ul').append('<li>' + $(this).val() + '</li>');
-  	})
+  	});
   	$('.form-books2').on('blur', function() {
   		$('.books ul').append('<li>' + $(this).val() + '</li>');
-  	})
-  	$('.form-js-libraries1').on('blur', function() {
-  		$('.js-libraries ul').append('<li>' + $(this).val() + '</li>');
   	});
+
+    $('.form-js-libraries1').on('blur', function() {
+      $('.js-libraries ul').append('<li>' + $(this).val() + '</li>');
+    });
+  
   	$('.form-js-libraries2').on('blur', function() {
   		$('.js-libraries ul').append('<li>' + $(this).val() + '</li>');
   	});
